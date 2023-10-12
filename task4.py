@@ -26,29 +26,26 @@ Your closing balance is $51.51
 
 
 total = 0
-for i in range(1):
-    x = int(input("enter total purchases for month 1: "))
-    y = int(input("enter total payments for month 1: "))
+x = int(input("enter total purchases month 1: "))
+y = int(input("enter total payments month 1: "))
 
 if y <= x:
-    num  = x - y
-    interest= num * 0.02
-    print(f" 2% interest has been charged {interest}")
-    balance = num + interest
-    print(balance)
+    num = x - y
+    interest = num * 0.02
+    print(f"2% intrest has been charged: ${interest}")
+    cbalance = num + interest
+    print(f"closing balance is ${cbalance}")
 
+x2 = int(input("enter total purchases month 2: "))
+y2 = int(input("enter total payments month 2: "))
 
-for i in range(1):
-    x2 = int(input("enter total purchases for month 2: "))
-    y2 = int(input("enter total payments for month 2: "))
-
-if (y2 <= x2) + num:
-    interest2 = int(interest)
-    num2  = x2 - y2
+if y2 <= x2:
+    num2 = (x2 - y2) + num
+    interest2 = int(intrest)
     interest2 = num2 * 0.02
-    print(f" 2% interest has been charged {interest}")
-    Newbalance = num2 + interest2
-    print(Newbalance)
+    print(f"2% intrest has been charged: ${interest2}")
+    cbalance2 = num2 + interest2 + interest
+    print(f"closing balance is ${cbalance2}")
 
 
 
